@@ -13,6 +13,12 @@ import { HttpClientModule } from "@angular/common/http";
 //Importar Rutas
 import { ROUTES } from './app.routes';
 
+//Pipes
+import { NoimagePipe } from './pipes/noimage.pipe';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
+import { CardsComponent } from './components/cards/cards.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +26,11 @@ import { ROUTES } from './app.routes';
     ArtistaComponent,
     HomeComponent,
     SearchComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagePipe,
+    DomseguroPipe,
+    CardsComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
